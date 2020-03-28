@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1919E4E4C1EEA8FCF116F1383F5826E5 /* UIImage-NKDBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 81F987F2B13AAC32CD09AE89F664C8A4 /* UIImage-NKDBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A5376842F5C0298454C25DA3B41C9A2 /* Pods-NKDBarcode_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F5E74D73DB194DFEBF87155DDC9298 /* Pods-NKDBarcode_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C1FDB818EF3E2482E1A94C55DA1D4F /* NKDCode39Barcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC9366A69B079461EA5D43A9F233C48 /* NKDCode39Barcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ACA0743A14A8BE5F9355DF3588D2942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2CD660314743FC97E59246F11D54AC1E /* NSString-UPCEAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 5635E587C9530E79F5D578569368A933 /* NSString-UPCEAN.m */; };
+		2E36D5FABE887D0138CB2516BA952682 /* NKDBarcodeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDCC8F71D2F0286F14718069880C4C8 /* NKDBarcodeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		360C57FB53817C4AF7772CD5CFC34F0D /* NKDCodabarBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 946821679CB2F432EB8D69AD612715FE /* NKDCodabarBarcode.m */; };
+		3F5904B097DD5AED95DA56CC284BE849 /* NKDCodabarBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB2C83DCC58144C568F338C486F4FED /* NKDCodabarBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44B3012ED35CBE228BA527FA91547E3A /* UIImage-Normalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 170308F1A2232AE5328FD8EF0F8EA9A9 /* UIImage-Normalize.m */; };
+		4679C06298C546FCDA7F4E21A91CA3AA /* JapanPostBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2B9C10F68E06135AC8DAA7DA2389C6 /* JapanPostBarcode.m */; };
+		4EC298F2DD9E150A1D0A57FA1A3CBB61 /* NKDEAN13Barcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB7750B798FAAB05B120975A83300FF /* NKDEAN13Barcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56AA4B91F732401D2BF64AB2A1EEE917 /* NKDCode39Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 434A2FB0E00B6A2C6837CABFCEE04581 /* NKDCode39Barcode.m */; };
+		5883345DC6AE81D3A4E1B08FFEE7603D /* NKDInterleavedTwoOfFiveBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C58DD2C01EF69B74CC22B1E6EB0CFD0 /* NKDInterleavedTwoOfFiveBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CAB07A928442933103BEFFCEF74748 /* NKDPlanetBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = DA473C39D48A5593D6FA8DB3FF3049D0 /* NKDPlanetBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A4514F4AFE606E23A39DBD56F28C326 /* NKDAbstractUPCEANBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4714CAB25959379A60C04D74634E7B /* NKDAbstractUPCEANBarcode.m */; };
+		7216F45902C07A2028E4582D17FF3F10 /* UIImage-Normalize.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1791DBB283306648D14EDFEBDBFDE8 /* UIImage-Normalize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BF83E24EA643154976582E419890BA5 /* NKDBarcodeOffscreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A58323E4A18B7BEE195353CD5987EB3 /* NKDBarcodeOffscreenView.m */; };
+		7D306A548B8F74DA4A0D789741CAAAA8 /* NKDPlanetBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = C7304DF0463D6132DF6F2F0AECBE6BD4 /* NKDPlanetBarcode.m */; };
+		823B2B46D378AF8061A335C9E87B35F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8747623FB6F58E24E8D29789C02741C3 /* NKDEAN8Barcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A844D12E0F534ED670E7CD638639B4 /* NKDEAN8Barcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DF7FD4C027BC198A50E506749E571DE /* NKDUPCEBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847C894C6A0595BFCCE8A5AA57418A3 /* NKDUPCEBarcode.m */; };
+		8FE07BA445C90781CAD0892AB1A445A5 /* NKDCode128Barcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 088DF0C40C9EFA27E8F5C684A107F260 /* NKDCode128Barcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923B759F3F47879A0B3482C0D537FD6C /* NSString-UPCEAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 3468CC9DEBF32DC2721D29040C21B280 /* NSString-UPCEAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9243EE7BBE98B1AFED31CC8CEAF4B5A2 /* NKDModifiedPlesseyBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA337691D7A26C98A36EE0C60F4FD26 /* NKDModifiedPlesseyBarcode.m */; };
+		92C5916E89FF5EFE36C80C5893A291DD /* NKDUPCABarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BEEE2CCF51702B0A931F54F9DE4290 /* NKDUPCABarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991840130B8D14850F7A9419DE0FC003 /* NKDRoyalMailBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 768DE116952D48415F26491407D7787F /* NKDRoyalMailBarcode.m */; };
+		99DA55BF782B17F0C400C27D4EEB0724 /* NKDBarcodeOffscreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD0077E5C13C0ADBFF22F22A53E33A7 /* NKDBarcodeOffscreenView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AC7097AD3B102A6384BCC1624BF37BE /* JapanPostBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5601C62040690F0999E363A9C7618D /* JapanPostBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ADAEA510F803DC03A7C6AF949EA3228 /* NKDUPCABarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD9C3B6A318EF7CDC1C780BC39E478 /* NKDUPCABarcode.m */; };
+		9D81BA2CC9152DC3401956236FABC3D1 /* README in Sources */ = {isa = PBXBuildFile; fileRef = 9A86E3049EA92423571B92432309FB28 /* README */; };
+		9DAFB554D345E09DD99B83B54039DE7C /* NKDEAN13Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76150C1D5619D885C6BE9A338087DB /* NKDEAN13Barcode.m */; };
+		9E7F7F1E002B09050F2E8D02D66C7F40 /* Pods-NKDBarcode_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14584CF45A2C34DA9F72967EC3EA043B /* Pods-NKDBarcode_Tests-dummy.m */; };
+		A88C618CA5EDC54D228FC57DD1054437 /* NKDBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCF546A886BA965806A4253A3D1AD2C /* NKDBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB4F26F95DEB0CFE968CBD7E3B3DBC65 /* NKDPostnetBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 557C39E8E70484AB68FDE0FA373C0E3A /* NKDPostnetBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADBF2D2349016FC7E6CDAC0E4944A627 /* NKDIndustrialTwoOfFiveBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BB8D24B3F7C4573AA73C0F390511E8 /* NKDIndustrialTwoOfFiveBarcode.m */; };
+		BB09867325AABCA3DFF9794CBBD5D56D /* NKDIndustrialTwoOfFiveBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = B8345D9F8104097730DB5892A244609E /* NKDIndustrialTwoOfFiveBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD10A06EDBA1692A8422019A13B7485B /* NKDBarcode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6650DFC5444A9B00EDCCFCEA33FB381A /* NKDBarcode-dummy.m */; };
+		C0A5D0C1C6222B3C159D96161D646B48 /* NKDUPCEBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 45017D35230E3548B14FBE93AF1E4AB7 /* NKDUPCEBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7BBB0AB5C294A6C711251AB8EFD33C3 /* NKDModifiedPlesseyBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = ED257FC45D5851FB2BAFE0444C06C394 /* NKDModifiedPlesseyBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB28D7478DB979F9E56D6302F3359BB6 /* NKDInterleavedTwoOfFiveBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A04AA612260590A0FF8DC49A54EDAF /* NKDInterleavedTwoOfFiveBarcode.m */; };
+		D3672C6DA881433D9DE8976F8BB856CE /* NKDExtendedCode39Barcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F45CAA571E358EDDE47A63F65266AD /* NKDExtendedCode39Barcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5499865EB92184ACDC08C073202F2EA /* UIImage-NKDBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5626687F744E54F7C407BD37B2DAADA6 /* UIImage-NKDBarcode.m */; };
+		D6A530A63E6EE30737BF565830A94D91 /* NKDPostnetBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = C542C30908C7B27335D1066949E28ED8 /* NKDPostnetBarcode.m */; };
+		D83ABFE71DFB7B907C959B8AAC2104AB /* NKDExtendedCode39Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C1D1F7FC50620337EB3A7EA354608E /* NKDExtendedCode39Barcode.m */; };
+		D863198A3F713264A5962519E1E1FF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DF2CA777D692D4CAE39EE01666A8A2CE /* NKDModifiedPlesseyHexBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C49500119D22EE907C2B186E445EF21 /* NKDModifiedPlesseyHexBarcode.m */; };
+		E0B72DD6DF29C40B29B19889E7A79A31 /* NKDBarcode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B059028CA61FAEA74E194FB96C8F4F2 /* NKDBarcode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBB973A7B2ADE39A217AECE85AC2B6BE /* NKDRoyalMailBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C4ECA511DB3A1C0EA51E9801FFE20F /* NKDRoyalMailBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2701E2D35B01C57B503FEBA6B1A24F /* Pods-NKDBarcode_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B05E4109F0B204B795F43979D3D7 /* Pods-NKDBarcode_Example-dummy.m */; };
+		EF6FD73636E3EE14B37EB749C339F4CD /* NKDCode128Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E333A3D948C050BE531A1F404F8AFA52 /* NKDCode128Barcode.m */; };
+		F1CAF8224EECFFD9F3649EF888FB3446 /* NKDEAN8Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 064819DF5EB034E542BD503AE77D60B4 /* NKDEAN8Barcode.m */; };
+		F43DA50E60415852E36772DC08C376D4 /* NKDModifiedPlesseyHexBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B30C03E1B9C3E553B433CA24990ED2F /* NKDModifiedPlesseyHexBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB7BD05040EE299FED617E26D41A6B6B /* NKDBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E943772F6A8254078EF94FB4A0C9C8 /* NKDBarcode.m */; };
+		FBE4EE1B9226F9C38FFDAD4DE625E673 /* NKDAbstractUPCEANBarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3C60D32F7AB9ADB9117989C2157D81 /* NKDAbstractUPCEANBarcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE58467C0ADCD3B24CFEB80853FD8392 /* Pods-NKDBarcode_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C019F832CC8653032E21301CD4872EB /* Pods-NKDBarcode_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD4A4FCA2CDE871F8B43A3E3E981CA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A6A4685CAD2E4C15D5A3D5EF00C16E5;
+			remoteInfo = NKDBarcode;
+		};
+		E991AB92B6007109FD5C833D73696BBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F7979FADF78865BE1A77EC19EA0B62;
+			remoteInfo = "Pods-NKDBarcode_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064819DF5EB034E542BD503AE77D60B4 /* NKDEAN8Barcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDEAN8Barcode.m; path = NKDBarcode/Classes/NKDEAN8Barcode.m; sourceTree = "<group>"; };
+		088DF0C40C9EFA27E8F5C684A107F260 /* NKDCode128Barcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDCode128Barcode.h; path = NKDBarcode/Classes/NKDCode128Barcode.h; sourceTree = "<group>"; };
+		0A1791DBB283306648D14EDFEBDBFDE8 /* UIImage-Normalize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage-Normalize.h"; path = "NKDBarcode/Classes/UIImage-Normalize.h"; sourceTree = "<group>"; };
+		0C49500119D22EE907C2B186E445EF21 /* NKDModifiedPlesseyHexBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDModifiedPlesseyHexBarcode.m; path = NKDBarcode/Classes/NKDModifiedPlesseyHexBarcode.m; sourceTree = "<group>"; };
+		14584CF45A2C34DA9F72967EC3EA043B /* Pods-NKDBarcode_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKDBarcode_Tests-dummy.m"; sourceTree = "<group>"; };
+		170308F1A2232AE5328FD8EF0F8EA9A9 /* UIImage-Normalize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Normalize.m"; path = "NKDBarcode/Classes/UIImage-Normalize.m"; sourceTree = "<group>"; };
+		1A58323E4A18B7BEE195353CD5987EB3 /* NKDBarcodeOffscreenView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDBarcodeOffscreenView.m; path = NKDBarcode/Classes/NKDBarcodeOffscreenView.m; sourceTree = "<group>"; };
+		1B059028CA61FAEA74E194FB96C8F4F2 /* NKDBarcode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKDBarcode-umbrella.h"; sourceTree = "<group>"; };
+		1C58DD2C01EF69B74CC22B1E6EB0CFD0 /* NKDInterleavedTwoOfFiveBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDInterleavedTwoOfFiveBarcode.h; path = NKDBarcode/Classes/NKDInterleavedTwoOfFiveBarcode.h; sourceTree = "<group>"; };
+		21156AF7C7258A6CE2DC3C550739B668 /* NKDBarcode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKDBarcode.modulemap; sourceTree = "<group>"; };
+		2793F7A25AF66C5623FC24033E634E07 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2EB7750B798FAAB05B120975A83300FF /* NKDEAN13Barcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDEAN13Barcode.h; path = NKDBarcode/Classes/NKDEAN13Barcode.h; sourceTree = "<group>"; };
+		2F4667BDDBF01FE7F0378AE9DF36D97F /* Pods_NKDBarcode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKDBarcode_Example.framework; path = "Pods-NKDBarcode_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E1B05E4109F0B204B795F43979D3D7 /* Pods-NKDBarcode_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKDBarcode_Example-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3468CC9DEBF32DC2721D29040C21B280 /* NSString-UPCEAN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString-UPCEAN.h"; path = "NKDBarcode/Classes/NSString-UPCEAN.h"; sourceTree = "<group>"; };
+		3B8CCA9763C797ED563C2CF064F6D604 /* NKDBarcode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKDBarcode.xcconfig; sourceTree = "<group>"; };
+		3BD0077E5C13C0ADBFF22F22A53E33A7 /* NKDBarcodeOffscreenView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDBarcodeOffscreenView.h; path = NKDBarcode/Classes/NKDBarcodeOffscreenView.h; sourceTree = "<group>"; };
+		3D76150C1D5619D885C6BE9A338087DB /* NKDEAN13Barcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDEAN13Barcode.m; path = NKDBarcode/Classes/NKDEAN13Barcode.m; sourceTree = "<group>"; };
+		3FCF546A886BA965806A4253A3D1AD2C /* NKDBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDBarcode.h; path = NKDBarcode/Classes/NKDBarcode.h; sourceTree = "<group>"; };
+		427AE8CBB0E128662E8AA2084511F443 /* NKDBarcode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKDBarcode-prefix.pch"; sourceTree = "<group>"; };
+		434A2FB0E00B6A2C6837CABFCEE04581 /* NKDCode39Barcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDCode39Barcode.m; path = NKDBarcode/Classes/NKDCode39Barcode.m; sourceTree = "<group>"; };
+		43F45CAA571E358EDDE47A63F65266AD /* NKDExtendedCode39Barcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDExtendedCode39Barcode.h; path = NKDBarcode/Classes/NKDExtendedCode39Barcode.h; sourceTree = "<group>"; };
+		45017D35230E3548B14FBE93AF1E4AB7 /* NKDUPCEBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDUPCEBarcode.h; path = NKDBarcode/Classes/NKDUPCEBarcode.h; sourceTree = "<group>"; };
+		4C019F832CC8653032E21301CD4872EB /* Pods-NKDBarcode_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NKDBarcode_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4FA08372EC90A277A8191C5A43577F86 /* Pods-NKDBarcode_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NKDBarcode_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50C4ECA511DB3A1C0EA51E9801FFE20F /* NKDRoyalMailBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDRoyalMailBarcode.h; path = NKDBarcode/Classes/NKDRoyalMailBarcode.h; sourceTree = "<group>"; };
+		557C39E8E70484AB68FDE0FA373C0E3A /* NKDPostnetBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDPostnetBarcode.h; path = NKDBarcode/Classes/NKDPostnetBarcode.h; sourceTree = "<group>"; };
+		5626687F744E54F7C407BD37B2DAADA6 /* UIImage-NKDBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage-NKDBarcode.m"; path = "NKDBarcode/Classes/UIImage-NKDBarcode.m"; sourceTree = "<group>"; };
+		5635E587C9530E79F5D578569368A933 /* NSString-UPCEAN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString-UPCEAN.m"; path = "NKDBarcode/Classes/NSString-UPCEAN.m"; sourceTree = "<group>"; };
+		6650DFC5444A9B00EDCCFCEA33FB381A /* NKDBarcode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKDBarcode-dummy.m"; sourceTree = "<group>"; };
+		66E5232CB192BA4B7461510372A95093 /* Pods-NKDBarcode_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NKDBarcode_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B30C03E1B9C3E553B433CA24990ED2F /* NKDModifiedPlesseyHexBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDModifiedPlesseyHexBarcode.h; path = NKDBarcode/Classes/NKDModifiedPlesseyHexBarcode.h; sourceTree = "<group>"; };
+		7195FFC7A53F8B41B6F2F57C7690C5E3 /* Pods-NKDBarcode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKDBarcode_Example.release.xcconfig"; sourceTree = "<group>"; };
+		768DE116952D48415F26491407D7787F /* NKDRoyalMailBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDRoyalMailBarcode.m; path = NKDBarcode/Classes/NKDRoyalMailBarcode.m; sourceTree = "<group>"; };
+		7EDCC8F71D2F0286F14718069880C4C8 /* NKDBarcodeFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDBarcodeFramework.h; path = NKDBarcode/Classes/NKDBarcodeFramework.h; sourceTree = "<group>"; };
+		81F987F2B13AAC32CD09AE89F664C8A4 /* UIImage-NKDBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage-NKDBarcode.h"; path = "NKDBarcode/Classes/UIImage-NKDBarcode.h"; sourceTree = "<group>"; };
+		82A844D12E0F534ED670E7CD638639B4 /* NKDEAN8Barcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDEAN8Barcode.h; path = NKDBarcode/Classes/NKDEAN8Barcode.h; sourceTree = "<group>"; };
+		8847C894C6A0595BFCCE8A5AA57418A3 /* NKDUPCEBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDUPCEBarcode.m; path = NKDBarcode/Classes/NKDUPCEBarcode.m; sourceTree = "<group>"; };
+		88BB8D24B3F7C4573AA73C0F390511E8 /* NKDIndustrialTwoOfFiveBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDIndustrialTwoOfFiveBarcode.m; path = NKDBarcode/Classes/NKDIndustrialTwoOfFiveBarcode.m; sourceTree = "<group>"; };
+		88C1D1F7FC50620337EB3A7EA354608E /* NKDExtendedCode39Barcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDExtendedCode39Barcode.m; path = NKDBarcode/Classes/NKDExtendedCode39Barcode.m; sourceTree = "<group>"; };
+		8B941E582EA3A775BFCC235C5FBC28AA /* Pods_NKDBarcode_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKDBarcode_Tests.framework; path = "Pods-NKDBarcode_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC9366A69B079461EA5D43A9F233C48 /* NKDCode39Barcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDCode39Barcode.h; path = NKDBarcode/Classes/NKDCode39Barcode.h; sourceTree = "<group>"; };
+		946821679CB2F432EB8D69AD612715FE /* NKDCodabarBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDCodabarBarcode.m; path = NKDBarcode/Classes/NKDCodabarBarcode.m; sourceTree = "<group>"; };
+		9A86E3049EA92423571B92432309FB28 /* README */ = {isa = PBXFileReference; includeInIndex = 1; name = README; path = NKDBarcode/Classes/README; sourceTree = "<group>"; };
+		9AA337691D7A26C98A36EE0C60F4FD26 /* NKDModifiedPlesseyBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDModifiedPlesseyBarcode.m; path = NKDBarcode/Classes/NKDModifiedPlesseyBarcode.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA12D7297CDFFD6EE7B374A2FE32D28A /* Pods-NKDBarcode_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKDBarcode_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABCD9C3B6A318EF7CDC1C780BC39E478 /* NKDUPCABarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDUPCABarcode.m; path = NKDBarcode/Classes/NKDUPCABarcode.m; sourceTree = "<group>"; };
+		ADA4C6395CACAB534ED5251B7C7426ED /* Pods-NKDBarcode_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKDBarcode_Example.modulemap"; sourceTree = "<group>"; };
+		B7A04AA612260590A0FF8DC49A54EDAF /* NKDInterleavedTwoOfFiveBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDInterleavedTwoOfFiveBarcode.m; path = NKDBarcode/Classes/NKDInterleavedTwoOfFiveBarcode.m; sourceTree = "<group>"; };
+		B8345D9F8104097730DB5892A244609E /* NKDIndustrialTwoOfFiveBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDIndustrialTwoOfFiveBarcode.h; path = NKDBarcode/Classes/NKDIndustrialTwoOfFiveBarcode.h; sourceTree = "<group>"; };
+		BC5601C62040690F0999E363A9C7618D /* JapanPostBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JapanPostBarcode.h; path = NKDBarcode/Classes/JapanPostBarcode.h; sourceTree = "<group>"; };
+		C542C30908C7B27335D1066949E28ED8 /* NKDPostnetBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDPostnetBarcode.m; path = NKDBarcode/Classes/NKDPostnetBarcode.m; sourceTree = "<group>"; };
+		C5BEEE2CCF51702B0A931F54F9DE4290 /* NKDUPCABarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDUPCABarcode.h; path = NKDBarcode/Classes/NKDUPCABarcode.h; sourceTree = "<group>"; };
+		C7304DF0463D6132DF6F2F0AECBE6BD4 /* NKDPlanetBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDPlanetBarcode.m; path = NKDBarcode/Classes/NKDPlanetBarcode.m; sourceTree = "<group>"; };
+		C87F730ACA5EC3C70F1C907EEA78F7B1 /* Pods-NKDBarcode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKDBarcode_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C89C8B63B6A9DB9ECEBE9D87605F9AF8 /* Pods-NKDBarcode_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NKDBarcode_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CB597AA853E9CDE83E2F88E15FDC82EC /* NKDBarcode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NKDBarcode-Info.plist"; sourceTree = "<group>"; };
+		CC2B9C10F68E06135AC8DAA7DA2389C6 /* JapanPostBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JapanPostBarcode.m; path = NKDBarcode/Classes/JapanPostBarcode.m; sourceTree = "<group>"; };
+		CDB2C83DCC58144C568F338C486F4FED /* NKDCodabarBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDCodabarBarcode.h; path = NKDBarcode/Classes/NKDCodabarBarcode.h; sourceTree = "<group>"; };
+		D4A39D36F18BCCCE565585C137990AF1 /* NKDBarcode.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NKDBarcode.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA318400FA9E5ABB8C9C7E301285133E /* Pods-NKDBarcode_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKDBarcode_Example-Info.plist"; sourceTree = "<group>"; };
+		DA473C39D48A5593D6FA8DB3FF3049D0 /* NKDPlanetBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDPlanetBarcode.h; path = NKDBarcode/Classes/NKDPlanetBarcode.h; sourceTree = "<group>"; };
+		DD792FFB2665CEDD1A8E88B6A7D1E27D /* Pods-NKDBarcode_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKDBarcode_Tests-Info.plist"; sourceTree = "<group>"; };
+		E05FC23188E7729483676742D1358A9E /* Pods-NKDBarcode_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKDBarcode_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E333A3D948C050BE531A1F404F8AFA52 /* NKDCode128Barcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDCode128Barcode.m; path = NKDBarcode/Classes/NKDCode128Barcode.m; sourceTree = "<group>"; };
+		E59F4C1D388FD7C2D16CA7BDE98078A8 /* NKDBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKDBarcode.framework; path = NKDBarcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B949738006F03141DC9D4B0ECD1BE6 /* Pods-NKDBarcode_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKDBarcode_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5FC0EC0BFC541CE698240D69A5A09D7 /* Pods-NKDBarcode_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKDBarcode_Tests.modulemap"; sourceTree = "<group>"; };
+		ED257FC45D5851FB2BAFE0444C06C394 /* NKDModifiedPlesseyBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDModifiedPlesseyBarcode.h; path = NKDBarcode/Classes/NKDModifiedPlesseyBarcode.h; sourceTree = "<group>"; };
+		EF4714CAB25959379A60C04D74634E7B /* NKDAbstractUPCEANBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDAbstractUPCEANBarcode.m; path = NKDBarcode/Classes/NKDAbstractUPCEANBarcode.m; sourceTree = "<group>"; };
+		F6F5E74D73DB194DFEBF87155DDC9298 /* Pods-NKDBarcode_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NKDBarcode_Example-umbrella.h"; sourceTree = "<group>"; };
+		F8A575A768AEBAD327474E8328E14D6F /* Pods-NKDBarcode_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKDBarcode_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8AD13B4BF93B165E503E417383A96BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F9E943772F6A8254078EF94FB4A0C9C8 /* NKDBarcode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NKDBarcode.m; path = NKDBarcode/Classes/NKDBarcode.m; sourceTree = "<group>"; };
+		FE3C60D32F7AB9ADB9117989C2157D81 /* NKDAbstractUPCEANBarcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKDAbstractUPCEANBarcode.h; path = NKDBarcode/Classes/NKDAbstractUPCEANBarcode.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08B0EEAD28FD422EC5DDAC564FD6B562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACA0743A14A8BE5F9355DF3588D2942 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		902EBC9C48EA6E2FE57ED042ED5E2587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D863198A3F713264A5962519E1E1FF75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC3C0EB1653873DE468979817E2873A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823B2B46D378AF8061A335C9E87B35F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226A0A29A1AF4A1C68D1EF92A37684E2 /* Pods-NKDBarcode_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E5FC0EC0BFC541CE698240D69A5A09D7 /* Pods-NKDBarcode_Tests.modulemap */,
+				4FA08372EC90A277A8191C5A43577F86 /* Pods-NKDBarcode_Tests-acknowledgements.markdown */,
+				F8A575A768AEBAD327474E8328E14D6F /* Pods-NKDBarcode_Tests-acknowledgements.plist */,
+				14584CF45A2C34DA9F72967EC3EA043B /* Pods-NKDBarcode_Tests-dummy.m */,
+				DD792FFB2665CEDD1A8E88B6A7D1E27D /* Pods-NKDBarcode_Tests-Info.plist */,
+				4C019F832CC8653032E21301CD4872EB /* Pods-NKDBarcode_Tests-umbrella.h */,
+				AA12D7297CDFFD6EE7B374A2FE32D28A /* Pods-NKDBarcode_Tests.debug.xcconfig */,
+				E05FC23188E7729483676742D1358A9E /* Pods-NKDBarcode_Tests.release.xcconfig */,
+			);
+			name = "Pods-NKDBarcode_Tests";
+			path = "Target Support Files/Pods-NKDBarcode_Tests";
+			sourceTree = "<group>";
+		};
+		250ED538991F8B50641A2B7B5C95D39C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21156AF7C7258A6CE2DC3C550739B668 /* NKDBarcode.modulemap */,
+				3B8CCA9763C797ED563C2CF064F6D604 /* NKDBarcode.xcconfig */,
+				6650DFC5444A9B00EDCCFCEA33FB381A /* NKDBarcode-dummy.m */,
+				CB597AA853E9CDE83E2F88E15FDC82EC /* NKDBarcode-Info.plist */,
+				427AE8CBB0E128662E8AA2084511F443 /* NKDBarcode-prefix.pch */,
+				1B059028CA61FAEA74E194FB96C8F4F2 /* NKDBarcode-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NKDBarcode";
+			sourceTree = "<group>";
+		};
+		4D65588FE56978E873AAAE85F0325DC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E59F4C1D388FD7C2D16CA7BDE98078A8 /* NKDBarcode.framework */,
+				2F4667BDDBF01FE7F0378AE9DF36D97F /* Pods_NKDBarcode_Example.framework */,
+				8B941E582EA3A775BFCC235C5FBC28AA /* Pods_NKDBarcode_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CA9C534766033603009F3C958EC8005 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F8AD13B4BF93B165E503E417383A96BA /* LICENSE */,
+				D4A39D36F18BCCCE565585C137990AF1 /* NKDBarcode.podspec */,
+				2793F7A25AF66C5623FC24033E634E07 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		62C813B39B5E8AD8924766E712E2B44C /* NKDBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				BC5601C62040690F0999E363A9C7618D /* JapanPostBarcode.h */,
+				CC2B9C10F68E06135AC8DAA7DA2389C6 /* JapanPostBarcode.m */,
+				FE3C60D32F7AB9ADB9117989C2157D81 /* NKDAbstractUPCEANBarcode.h */,
+				EF4714CAB25959379A60C04D74634E7B /* NKDAbstractUPCEANBarcode.m */,
+				3FCF546A886BA965806A4253A3D1AD2C /* NKDBarcode.h */,
+				F9E943772F6A8254078EF94FB4A0C9C8 /* NKDBarcode.m */,
+				7EDCC8F71D2F0286F14718069880C4C8 /* NKDBarcodeFramework.h */,
+				3BD0077E5C13C0ADBFF22F22A53E33A7 /* NKDBarcodeOffscreenView.h */,
+				1A58323E4A18B7BEE195353CD5987EB3 /* NKDBarcodeOffscreenView.m */,
+				CDB2C83DCC58144C568F338C486F4FED /* NKDCodabarBarcode.h */,
+				946821679CB2F432EB8D69AD612715FE /* NKDCodabarBarcode.m */,
+				088DF0C40C9EFA27E8F5C684A107F260 /* NKDCode128Barcode.h */,
+				E333A3D948C050BE531A1F404F8AFA52 /* NKDCode128Barcode.m */,
+				8CC9366A69B079461EA5D43A9F233C48 /* NKDCode39Barcode.h */,
+				434A2FB0E00B6A2C6837CABFCEE04581 /* NKDCode39Barcode.m */,
+				2EB7750B798FAAB05B120975A83300FF /* NKDEAN13Barcode.h */,
+				3D76150C1D5619D885C6BE9A338087DB /* NKDEAN13Barcode.m */,
+				82A844D12E0F534ED670E7CD638639B4 /* NKDEAN8Barcode.h */,
+				064819DF5EB034E542BD503AE77D60B4 /* NKDEAN8Barcode.m */,
+				43F45CAA571E358EDDE47A63F65266AD /* NKDExtendedCode39Barcode.h */,
+				88C1D1F7FC50620337EB3A7EA354608E /* NKDExtendedCode39Barcode.m */,
+				B8345D9F8104097730DB5892A244609E /* NKDIndustrialTwoOfFiveBarcode.h */,
+				88BB8D24B3F7C4573AA73C0F390511E8 /* NKDIndustrialTwoOfFiveBarcode.m */,
+				1C58DD2C01EF69B74CC22B1E6EB0CFD0 /* NKDInterleavedTwoOfFiveBarcode.h */,
+				B7A04AA612260590A0FF8DC49A54EDAF /* NKDInterleavedTwoOfFiveBarcode.m */,
+				ED257FC45D5851FB2BAFE0444C06C394 /* NKDModifiedPlesseyBarcode.h */,
+				9AA337691D7A26C98A36EE0C60F4FD26 /* NKDModifiedPlesseyBarcode.m */,
+				6B30C03E1B9C3E553B433CA24990ED2F /* NKDModifiedPlesseyHexBarcode.h */,
+				0C49500119D22EE907C2B186E445EF21 /* NKDModifiedPlesseyHexBarcode.m */,
+				DA473C39D48A5593D6FA8DB3FF3049D0 /* NKDPlanetBarcode.h */,
+				C7304DF0463D6132DF6F2F0AECBE6BD4 /* NKDPlanetBarcode.m */,
+				557C39E8E70484AB68FDE0FA373C0E3A /* NKDPostnetBarcode.h */,
+				C542C30908C7B27335D1066949E28ED8 /* NKDPostnetBarcode.m */,
+				50C4ECA511DB3A1C0EA51E9801FFE20F /* NKDRoyalMailBarcode.h */,
+				768DE116952D48415F26491407D7787F /* NKDRoyalMailBarcode.m */,
+				C5BEEE2CCF51702B0A931F54F9DE4290 /* NKDUPCABarcode.h */,
+				ABCD9C3B6A318EF7CDC1C780BC39E478 /* NKDUPCABarcode.m */,
+				45017D35230E3548B14FBE93AF1E4AB7 /* NKDUPCEBarcode.h */,
+				8847C894C6A0595BFCCE8A5AA57418A3 /* NKDUPCEBarcode.m */,
+				3468CC9DEBF32DC2721D29040C21B280 /* NSString-UPCEAN.h */,
+				5635E587C9530E79F5D578569368A933 /* NSString-UPCEAN.m */,
+				9A86E3049EA92423571B92432309FB28 /* README */,
+				81F987F2B13AAC32CD09AE89F664C8A4 /* UIImage-NKDBarcode.h */,
+				5626687F744E54F7C407BD37B2DAADA6 /* UIImage-NKDBarcode.m */,
+				0A1791DBB283306648D14EDFEBDBFDE8 /* UIImage-Normalize.h */,
+				170308F1A2232AE5328FD8EF0F8EA9A9 /* UIImage-Normalize.m */,
+				5CA9C534766033603009F3C958EC8005 /* Pod */,
+				250ED538991F8B50641A2B7B5C95D39C /* Support Files */,
+			);
+			name = NKDBarcode;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A6E9B87061384D0969CB49B05BB9CF3A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF95E37F3AA9568AC3BDADD60DF84F51 /* Pods-NKDBarcode_Example */,
+				226A0A29A1AF4A1C68D1EF92A37684E2 /* Pods-NKDBarcode_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BF95E37F3AA9568AC3BDADD60DF84F51 /* Pods-NKDBarcode_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4C6395CACAB534ED5251B7C7426ED /* Pods-NKDBarcode_Example.modulemap */,
+				66E5232CB192BA4B7461510372A95093 /* Pods-NKDBarcode_Example-acknowledgements.markdown */,
+				E5B949738006F03141DC9D4B0ECD1BE6 /* Pods-NKDBarcode_Example-acknowledgements.plist */,
+				30E1B05E4109F0B204B795F43979D3D7 /* Pods-NKDBarcode_Example-dummy.m */,
+				C89C8B63B6A9DB9ECEBE9D87605F9AF8 /* Pods-NKDBarcode_Example-frameworks.sh */,
+				DA318400FA9E5ABB8C9C7E301285133E /* Pods-NKDBarcode_Example-Info.plist */,
+				F6F5E74D73DB194DFEBF87155DDC9298 /* Pods-NKDBarcode_Example-umbrella.h */,
+				C87F730ACA5EC3C70F1C907EEA78F7B1 /* Pods-NKDBarcode_Example.debug.xcconfig */,
+				7195FFC7A53F8B41B6F2F57C7690C5E3 /* Pods-NKDBarcode_Example.release.xcconfig */,
+			);
+			name = "Pods-NKDBarcode_Example";
+			path = "Target Support Files/Pods-NKDBarcode_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EA6EEB80FBBA209BDA54B2DB5D1346DB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4D65588FE56978E873AAAE85F0325DC6 /* Products */,
+				A6E9B87061384D0969CB49B05BB9CF3A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA6EEB80FBBA209BDA54B2DB5D1346DB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62C813B39B5E8AD8924766E712E2B44C /* NKDBarcode */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		297C17FFB13CF5D96364080943073367 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58467C0ADCD3B24CFEB80853FD8392 /* Pods-NKDBarcode_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD851061368393FBE1A364F8481BB2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC7097AD3B102A6384BCC1624BF37BE /* JapanPostBarcode.h in Headers */,
+				FBE4EE1B9226F9C38FFDAD4DE625E673 /* NKDAbstractUPCEANBarcode.h in Headers */,
+				E0B72DD6DF29C40B29B19889E7A79A31 /* NKDBarcode-umbrella.h in Headers */,
+				A88C618CA5EDC54D228FC57DD1054437 /* NKDBarcode.h in Headers */,
+				2E36D5FABE887D0138CB2516BA952682 /* NKDBarcodeFramework.h in Headers */,
+				99DA55BF782B17F0C400C27D4EEB0724 /* NKDBarcodeOffscreenView.h in Headers */,
+				3F5904B097DD5AED95DA56CC284BE849 /* NKDCodabarBarcode.h in Headers */,
+				8FE07BA445C90781CAD0892AB1A445A5 /* NKDCode128Barcode.h in Headers */,
+				29C1FDB818EF3E2482E1A94C55DA1D4F /* NKDCode39Barcode.h in Headers */,
+				4EC298F2DD9E150A1D0A57FA1A3CBB61 /* NKDEAN13Barcode.h in Headers */,
+				8747623FB6F58E24E8D29789C02741C3 /* NKDEAN8Barcode.h in Headers */,
+				D3672C6DA881433D9DE8976F8BB856CE /* NKDExtendedCode39Barcode.h in Headers */,
+				BB09867325AABCA3DFF9794CBBD5D56D /* NKDIndustrialTwoOfFiveBarcode.h in Headers */,
+				5883345DC6AE81D3A4E1B08FFEE7603D /* NKDInterleavedTwoOfFiveBarcode.h in Headers */,
+				C7BBB0AB5C294A6C711251AB8EFD33C3 /* NKDModifiedPlesseyBarcode.h in Headers */,
+				F43DA50E60415852E36772DC08C376D4 /* NKDModifiedPlesseyHexBarcode.h in Headers */,
+				69CAB07A928442933103BEFFCEF74748 /* NKDPlanetBarcode.h in Headers */,
+				AB4F26F95DEB0CFE968CBD7E3B3DBC65 /* NKDPostnetBarcode.h in Headers */,
+				EBB973A7B2ADE39A217AECE85AC2B6BE /* NKDRoyalMailBarcode.h in Headers */,
+				92C5916E89FF5EFE36C80C5893A291DD /* NKDUPCABarcode.h in Headers */,
+				C0A5D0C1C6222B3C159D96161D646B48 /* NKDUPCEBarcode.h in Headers */,
+				923B759F3F47879A0B3482C0D537FD6C /* NSString-UPCEAN.h in Headers */,
+				1919E4E4C1EEA8FCF116F1383F5826E5 /* UIImage-NKDBarcode.h in Headers */,
+				7216F45902C07A2028E4582D17FF3F10 /* UIImage-Normalize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA23D9A2851B64366B75372BA6C442D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5376842F5C0298454C25DA3B41C9A2 /* Pods-NKDBarcode_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43F7979FADF78865BE1A77EC19EA0B62 /* Pods-NKDBarcode_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9BF0FC1EA626D9F39AA18D1233D934 /* Build configuration list for PBXNativeTarget "Pods-NKDBarcode_Example" */;
+			buildPhases = (
+				DA23D9A2851B64366B75372BA6C442D7 /* Headers */,
+				7117F50F36E82900C4C99B1191317486 /* Sources */,
+				FDC3C0EB1653873DE468979817E2873A /* Frameworks */,
+				67F530E1A713F2C93CBAE7A8462CB01A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89628C4506C4FE2355D382C00527F84 /* PBXTargetDependency */,
+			);
+			name = "Pods-NKDBarcode_Example";
+			productName = "Pods-NKDBarcode_Example";
+			productReference = 2F4667BDDBF01FE7F0378AE9DF36D97F /* Pods_NKDBarcode_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A6A4685CAD2E4C15D5A3D5EF00C16E5 /* NKDBarcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA76B31AA82EF6D788965167E7AF9A42 /* Build configuration list for PBXNativeTarget "NKDBarcode" */;
+			buildPhases = (
+				4DD851061368393FBE1A364F8481BB2A /* Headers */,
+				F450C0BBD812054280FF8A939F29C95B /* Sources */,
+				08B0EEAD28FD422EC5DDAC564FD6B562 /* Frameworks */,
+				54223D25E80444D4161661367902C780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKDBarcode;
+			productName = NKDBarcode;
+			productReference = E59F4C1D388FD7C2D16CA7BDE98078A8 /* NKDBarcode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92173EA730D8FEE9143AA35F6F966113 /* Pods-NKDBarcode_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C182143161AC4CB6908FF42389EAF272 /* Build configuration list for PBXNativeTarget "Pods-NKDBarcode_Tests" */;
+			buildPhases = (
+				297C17FFB13CF5D96364080943073367 /* Headers */,
+				959FBDE6C56270179A83541909612895 /* Sources */,
+				902EBC9C48EA6E2FE57ED042ED5E2587 /* Frameworks */,
+				D2EA786F9A8CC0DF929CEE0CF43DC35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F333903429D0807E1ECF72BB678ACC5A /* PBXTargetDependency */,
+			);
+			name = "Pods-NKDBarcode_Tests";
+			productName = "Pods-NKDBarcode_Tests";
+			productReference = 8B941E582EA3A775BFCC235C5FBC28AA /* Pods_NKDBarcode_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4D65588FE56978E873AAAE85F0325DC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A6A4685CAD2E4C15D5A3D5EF00C16E5 /* NKDBarcode */,
+				43F7979FADF78865BE1A77EC19EA0B62 /* Pods-NKDBarcode_Example */,
+				92173EA730D8FEE9143AA35F6F966113 /* Pods-NKDBarcode_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54223D25E80444D4161661367902C780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F530E1A713F2C93CBAE7A8462CB01A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EA786F9A8CC0DF929CEE0CF43DC35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7117F50F36E82900C4C99B1191317486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2701E2D35B01C57B503FEBA6B1A24F /* Pods-NKDBarcode_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959FBDE6C56270179A83541909612895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7F7F1E002B09050F2E8D02D66C7F40 /* Pods-NKDBarcode_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F450C0BBD812054280FF8A939F29C95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4679C06298C546FCDA7F4E21A91CA3AA /* JapanPostBarcode.m in Sources */,
+				6A4514F4AFE606E23A39DBD56F28C326 /* NKDAbstractUPCEANBarcode.m in Sources */,
+				BD10A06EDBA1692A8422019A13B7485B /* NKDBarcode-dummy.m in Sources */,
+				FB7BD05040EE299FED617E26D41A6B6B /* NKDBarcode.m in Sources */,
+				7BF83E24EA643154976582E419890BA5 /* NKDBarcodeOffscreenView.m in Sources */,
+				360C57FB53817C4AF7772CD5CFC34F0D /* NKDCodabarBarcode.m in Sources */,
+				EF6FD73636E3EE14B37EB749C339F4CD /* NKDCode128Barcode.m in Sources */,
+				56AA4B91F732401D2BF64AB2A1EEE917 /* NKDCode39Barcode.m in Sources */,
+				9DAFB554D345E09DD99B83B54039DE7C /* NKDEAN13Barcode.m in Sources */,
+				F1CAF8224EECFFD9F3649EF888FB3446 /* NKDEAN8Barcode.m in Sources */,
+				D83ABFE71DFB7B907C959B8AAC2104AB /* NKDExtendedCode39Barcode.m in Sources */,
+				ADBF2D2349016FC7E6CDAC0E4944A627 /* NKDIndustrialTwoOfFiveBarcode.m in Sources */,
+				CB28D7478DB979F9E56D6302F3359BB6 /* NKDInterleavedTwoOfFiveBarcode.m in Sources */,
+				9243EE7BBE98B1AFED31CC8CEAF4B5A2 /* NKDModifiedPlesseyBarcode.m in Sources */,
+				DF2CA777D692D4CAE39EE01666A8A2CE /* NKDModifiedPlesseyHexBarcode.m in Sources */,
+				7D306A548B8F74DA4A0D789741CAAAA8 /* NKDPlanetBarcode.m in Sources */,
+				D6A530A63E6EE30737BF565830A94D91 /* NKDPostnetBarcode.m in Sources */,
+				991840130B8D14850F7A9419DE0FC003 /* NKDRoyalMailBarcode.m in Sources */,
+				9ADAEA510F803DC03A7C6AF949EA3228 /* NKDUPCABarcode.m in Sources */,
+				8DF7FD4C027BC198A50E506749E571DE /* NKDUPCEBarcode.m in Sources */,
+				2CD660314743FC97E59246F11D54AC1E /* NSString-UPCEAN.m in Sources */,
+				9D81BA2CC9152DC3401956236FABC3D1 /* README in Sources */,
+				D5499865EB92184ACDC08C073202F2EA /* UIImage-NKDBarcode.m in Sources */,
+				44B3012ED35CBE228BA527FA91547E3A /* UIImage-Normalize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D89628C4506C4FE2355D382C00527F84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NKDBarcode;
+			target = 7A6A4685CAD2E4C15D5A3D5EF00C16E5 /* NKDBarcode */;
+			targetProxy = BD4A4FCA2CDE871F8B43A3E3E981CA45 /* PBXContainerItemProxy */;
+		};
+		F333903429D0807E1ECF72BB678ACC5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NKDBarcode_Example";
+			target = 43F7979FADF78865BE1A77EC19EA0B62 /* Pods-NKDBarcode_Example */;
+			targetProxy = E991AB92B6007109FD5C833D73696BBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04AD7E1C96C9D7272B078F39A9DDC64A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA12D7297CDFFD6EE7B374A2FE32D28A /* Pods-NKDBarcode_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NKDBarcode_Tests/Pods-NKDBarcode_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NKDBarcode_Tests/Pods-NKDBarcode_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		304D600F066CEDDF653F2CFE5D4A8900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05FC23188E7729483676742D1358A9E /* Pods-NKDBarcode_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NKDBarcode_Tests/Pods-NKDBarcode_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NKDBarcode_Tests/Pods-NKDBarcode_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4D998F92E3A66AB0A8A5DC9963CA3BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8CCA9763C797ED563C2CF064F6D604 /* NKDBarcode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NKDBarcode/NKDBarcode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NKDBarcode/NKDBarcode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NKDBarcode/NKDBarcode.modulemap";
+				PRODUCT_MODULE_NAME = NKDBarcode;
+				PRODUCT_NAME = NKDBarcode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		540219BF973F489F1B75F3D882818F68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7195FFC7A53F8B41B6F2F57C7690C5E3 /* Pods-NKDBarcode_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NKDBarcode_Example/Pods-NKDBarcode_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NKDBarcode_Example/Pods-NKDBarcode_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AC83C6709D3F29982C9C3A5E2D809961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8CCA9763C797ED563C2CF064F6D604 /* NKDBarcode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NKDBarcode/NKDBarcode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NKDBarcode/NKDBarcode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NKDBarcode/NKDBarcode.modulemap";
+				PRODUCT_MODULE_NAME = NKDBarcode;
+				PRODUCT_NAME = NKDBarcode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC05EED8D154118C0BF4BCC72DC7AF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87F730ACA5EC3C70F1C907EEA78F7B1 /* Pods-NKDBarcode_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NKDBarcode_Example/Pods-NKDBarcode_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NKDBarcode_Example/Pods-NKDBarcode_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C182143161AC4CB6908FF42389EAF272 /* Build configuration list for PBXNativeTarget "Pods-NKDBarcode_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AD7E1C96C9D7272B078F39A9DDC64A /* Debug */,
+				304D600F066CEDDF653F2CFE5D4A8900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA76B31AA82EF6D788965167E7AF9A42 /* Build configuration list for PBXNativeTarget "NKDBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D998F92E3A66AB0A8A5DC9963CA3BD1 /* Debug */,
+				AC83C6709D3F29982C9C3A5E2D809961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9BF0FC1EA626D9F39AA18D1233D934 /* Build configuration list for PBXNativeTarget "Pods-NKDBarcode_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC05EED8D154118C0BF4BCC72DC7AF3F /* Debug */,
+				540219BF973F489F1B75F3D882818F68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -83,7 +83,7 @@
     // Starting from the units position, create a new number with all of
     // the odd position digits in their original sequence.
 
-    for (i = strlen(code)-1; i >=0; i-=2)
+    for (i = (int)strlen(code)-1; i >=0; i-=2)
         [newNum appendString:[NSString stringWithFormat:@"%c", code[i]]];
 
     // Multiply this new number by 2
@@ -95,7 +95,7 @@
         productSum += (productString[i] - '0');
 
    //  Add all of the digits not used in step one to the result in step three.
-    for (i = strlen(code -2); i >=0; i-=2)
+    for (i = (int)strlen(code -2); i >=0; i-=2)
         productSum += (code[i] - '0');
 
     // Determine the smallest number which when added to the result in step four

@@ -1,0 +1,6 @@
+framework module NKDBarcode {
+  umbrella header "NKDBarcode-umbrella.h"
+
+  export *
+  module * { export * }
+}

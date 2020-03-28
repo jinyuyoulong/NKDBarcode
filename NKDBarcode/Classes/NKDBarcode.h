@@ -136,7 +136,7 @@
 /*!
  @method setCaptionHeight:
  @abstract: Set amount of space to leave under barcode for the caption
- @param inHeight: Floating point amount of space to set (in inches)
+ @param inHeight Floating point amount of space to set (in inches)
  */
 -(void)setCaptionHeight:(float)inHeight;
 

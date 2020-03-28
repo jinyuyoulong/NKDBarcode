@@ -1,0 +1,16 @@
+PODS:
+  - NKDBarcode (0.1.0)
+
+DEPENDENCIES:
+  - NKDBarcode (from `../`)
+
+EXTERNAL SOURCES:
+  NKDBarcode:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NKDBarcode: e4548e05a5aa7cc6f049925ceedac2e4728378e5
+
+PODFILE CHECKSUM: da84e8bc0bdb6fecca78e23770892ac57378f205
+
+COCOAPODS: 1.8.4

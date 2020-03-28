@@ -263,7 +263,7 @@
 	 char *    code = (char *) [content cStringUsingEncoding:NSStringEncodingConversionAllowLossy];
 	 if (strlen(code) == 12)
 	 {
-		 i = strlen(code);
+		 i = (int)strlen(code);
 		 while (i-- > 0) {
 			 if (even) evenSum += code[i]-'0';
 			 else      oddSum += code[i]-'0';

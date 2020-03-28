@@ -36,11 +36,11 @@
     /*
      To arrive at the even encoding, work from the left encoding and do the following: 1) Change all the 1's to 0's and 0's to 1. 2) Read the resulting encoding in reverse order (from right to left). The result is the "left-hand even" encoding pattern.
      */
-    char		*tmp = (char *)[[self swapHandedness] cStringUsingEncoding:NSStringEncodingConversionAllowLossy];
+    char *tmp = (char *)[[self swapHandedness] cStringUsingEncoding:NSStringEncodingConversionAllowLossy];
     NSMutableString	*ret = [NSMutableString stringWithString:@""];
-    int			i;
+    int	i;
 
-    for (i = strlen(tmp)-1; i >= 0; i--)
+    for (i = (int)strlen(tmp)-1; i >= 0; i--)
         [ret appendString:[NSString stringWithFormat:@"%c", tmp[i]]];
 
     return ret;
