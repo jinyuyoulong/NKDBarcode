@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NKDInterleavedTwoOfFiveBarcode Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NKDBarcode </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">jinyuyoulong</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/_getBarForDigit:forBarNumber:">- _getBarForDigit:forBarNumber:</option>
+		
+		<option value="//api/name/barcode">- barcode</option>
+		
+		<option value="//api/name/generateChecksum">- generateChecksum</option>
+		
+		<option value="//api/name/initiator">- initiator</option>
+		
+		<option value="//api/name/isContentValid">- isContentValid</option>
+		
+		<option value="//api/name/terminator">- terminator</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NKDInterleavedTwoOfFiveBarcode Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/NKDBarcode.html">NKDBarcode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NKDInterleavedTwoOfFiveBarcode.h<br />NKDInterleavedTwoOfFiveBarcode.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class NKDInterleavedTwoOfFiveBarcode</p><p>Interleaved 2 of 5 uses Wide and Narrow bars interleaved (digits 1 and 2 occupy the same
+            space, one is bars, the other by the spaces. Therefore, we won&rsquo;t be using <em>encodeChar - we&rsquo;ll
+            override the <a href="#//api/name/barcode">barcode</a> method to use a class-specific method called </em>getBarForDigit:forBarNumber</p>
+
+<pre><code>        Because of the interleaving, there must be an even number of characters; With the check-digit, odd
+        length values become even and even-length become odd. Odd numbers (even when check-digit used)
+        are zero-padded to make an even-length value.
+</code></pre>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/barcode" title="barcode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/barcode">&ndash;&nbsp;barcode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overridden to implement interleaving of encoding</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)barcode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s that represent the encoded data</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method barcode</p><p>Most other barcodes implemented in this framework use a distinct set of bars and gaps to represent
+            a single character. The <I>interleaved</I> 2 of 5 barcode encodes two characters in each distinct
+            grouping - one using the bar widths and one using the spaces. Therefore, we have to encode two characters
+            at a time when the superclass behavior is to encode individual characters.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_getBarForDigit:forBarNumber:" title="_getBarForDigit:forBarNumber:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_getBarForDigit:forBarNumber:">&ndash;&nbsp;_getBarForDigit:forBarNumber:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells if the (bar/gap) in a particular position for a particular character should be wide or narrow.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_getBarForDigit:(char)<em>inChar</em> forBarNumber:(int)<em>theBar</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _getBarForDigit:forBarNumber:</p><p>This is a private method used by the overridden <a href="#//api/name/barcode">barcode</a> method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initiator" title="initiator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initiator">&ndash;&nbsp;initiator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overriden method specifies Interleaved Two of Five start character</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)initiator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>&ldquo;1010&rdquo; representing narrow bar, narrow gap, narrow bar, narrow gap</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method initiator</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminator" title="terminator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminator">&ndash;&nbsp;terminator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overriden method specifies Interleaved Two of Five stop character</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)terminator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>&ldquo;11101&rdquo; representing medium bar, narrow gap, narrow bar narrow gap. The two narrow bars allows the code
+                to be read in reverse; &ldquo;1010&rdquo; could also be used, but would result in a unidirectional <a href="#//api/name/barcode">barcode</a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method terminator</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateChecksum" title="generateChecksum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateChecksum">&ndash;&nbsp;generateChecksum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates simple 10-modulus(10) check digit</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generateChecksum</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method generateChecksum</p><p>The check digit for interleaved 2 of 5 is a simple modulus 10 calculation - in other words, the check digit is what
+            number needs to be added to the sum of the other digits to make a number evenly divisible by 10.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isContentValid" title="isContentValid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isContentValid">&ndash;&nbsp;isContentValid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enforces numeric-only content for this <a href="#//api/name/barcode">barcode</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isContentValid</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the provided string value has only numeric values, NO otherwise</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method isContentValid</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDInterleavedTwoOfFiveBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 jinyuyoulong. All rights reserved. Updated: 2020-03-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

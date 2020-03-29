@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NKDPlanetBarcode Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NKDBarcode </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">jinyuyoulong</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/_heightForDigit:andBar:">- _heightForDigit:andBar:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NKDPlanetBarcode Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/NKDPostnetBarcode.html">NKDPostnetBarcode</a> : <a href="../Classes/NKDBarcode.html">NKDBarcode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NKDPlanetBarcode.h<br />NKDPlanetBarcode.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@header NKDPlanetBarcode.h</p>
+
+<p>This is a concrete subclass of <a href="../Classes/NKDPostnetBarcode.html">NKDPostnetBarcode</a>. Planet Barcode is in most respects identical to PostNet,
+but for the fact that the positions of the tall and short bars are reversed.</p>
+
+<p>Thanks to Daniel Paquette for contributing the initial version of NKDPlanetBarcode.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/_heightForDigit:andBar:" title="_heightForDigit:andBar:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_heightForDigit:andBar:">&ndash;&nbsp;_heightForDigit:andBar:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Private method used by the overridden _encodeChar, to determine whether to use a tall or short
+            bar at a given bar for a particular numeric character</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (float)_heightForDigit:(int)<em>index</em> andBar:(int)<em>bar</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>Integer that specifies the index (0-4 because it&rsquo;s a 2 of 5 code) within an encoded character</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bar</code></th>
+						<td><p>Index within <i>content</i> of the character we&rsquo;re asking about</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Either TALL_BAR or SHORT_BAR.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _heightForDigit:andBar:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDPostnetBarcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 jinyuyoulong. All rights reserved. Updated: 2020-03-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

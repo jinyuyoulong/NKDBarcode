@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NKDCode128Barcode Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">NKDBarcode </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">jinyuyoulong</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/_bestCodeSetForContent">- _bestCodeSetForContent</option>
+		
+		<option value="//api/name/_canEncodeChar:withSet:">- _canEncodeChar:withSet:</option>
+		
+		<option value="//api/name/_encodeChar:">- _encodeChar:</option>
+		
+		<option value="//api/name/_encodeChar:withSet:">- _encodeChar:withSet:</option>
+		
+		<option value="//api/name/_encodeNumberPair:">- _encodeNumberPair:</option>
+		
+		<option value="//api/name/_shiftCharacterForSet:">- _shiftCharacterForSet:</option>
+		
+		<option value="//api/name/_valueForChar:">- _valueForChar:</option>
+		
+		<option value="//api/name/barcode">- barcode</option>
+		
+		<option value="//api/name/codeSet">- codeSet</option>
+		
+		<option value="//api/name/generateChecksum">- generateChecksum</option>
+		
+		<option value="//api/name/initWithContent:printsCaption:">- initWithContent:printsCaption:</option>
+		
+		<option value="//api/name/initiator">- initiator</option>
+		
+		<option value="//api/name/setCodeSet:">- setCodeSet:</option>
+		
+		<option value="//api/name/terminator">- terminator</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NKDCode128Barcode Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/NKDBarcode.html">NKDBarcode</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>NKDCode128Barcode.h<br />NKDCode128Barcode.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class NKDCode128Barcode</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithContent:printsCaption:" title="initWithContent:printsCaption:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithContent:printsCaption:">&ndash;&nbsp;initWithContent:printsCaption:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overridden to enforce generation of check digit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithContent:(NSString *)<em>inContent</em> printsCaption:(BOOL)<em>inPrints</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method initWithContent:printsCaption:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/codeSet" title="codeSet"></a>
+	<h3 class="method-title"><code><a href="#//api/name/codeSet">&ndash;&nbsp;codeSet</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the primary code set being used to encode content</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CodeSet)codeSet</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SET_A, SET_B, or SET_C</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method codeSet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCodeSet:" title="setCodeSet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCodeSet:">&ndash;&nbsp;setCodeSet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the primary code set to encode content with</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCodeSet:(CodeSet)<em>inSet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inSet</code></th>
+						<td><p>SET_A, SET_B, or SET_C</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method setCodeSet:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateChecksum" title="generateChecksum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateChecksum">&ndash;&nbsp;generateChecksum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates the check digit or checksum for this <a href="#//api/name/barcode">barcode</a> encoding scheme.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generateChecksum</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method generateChecksum</p><p>Code 128 has a mandatory check digit calculated by summing the start code
+            value to the product of each character&rsquo;s value (via lookup table), modulus 103.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_valueForChar:" title="_valueForChar:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_valueForChar:">&ndash;&nbsp;_valueForChar:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the code-128 value for a given character</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)_valueForChar:(int)<em>inChar</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Integer between 00 and 105</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _valueForChar:</p><p>Used for calculating checksum for code sets A and B, where the numeric code-128 &ldquo;value&rdquo; is arbitrary</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initiator" title="initiator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initiator">&ndash;&nbsp;initiator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the encoded initiator or alignment bar(s)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)initiator</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method initiator</p><p>This is likely the most complex initator method in the framework. Because there are three code sets to
+                choose from, we have to determine which one is the best choice for our content. Our algorithm will be
+                to check first to see if there are only numbers, then we use set C. If there are other characters, we
+                will sum the number of lower-case letters and the number of non-printing ASCII characters. If there are
+                more lowercase letters than non-printings, we will use set B, otherwise, we will use set C.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminator" title="terminator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminator">&ndash;&nbsp;terminator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the encoded terminator or alignment bar(s)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)terminator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s representing the last (non-content) character or alignment bar(s).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method terminator</p><p>Returns  1100011101011</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_encodeChar:" title="_encodeChar:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_encodeChar:">&ndash;&nbsp;_encodeChar:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Private method to turn a single character into a string of 1s and 0s.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)_encodeChar:(char)<em>inChar</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s representing inChar encoded for this <a href="#//api/name/barcode">barcode</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _encodeChar</p><p>This method is overridden to make sure the current</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_canEncodeChar:withSet:" title="_canEncodeChar:withSet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_canEncodeChar:withSet:">&ndash;&nbsp;_canEncodeChar:withSet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tells us whether a particular code set can encode a given character</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)_canEncodeChar:(char)<em>inChar</em> withSet:(CodeSet)<em>theSet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inChar</code></th>
+						<td><p>Character that we want to know whether it can be encoded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>theSet</code></th>
+						<td><p>The code set we want to try and encode it with</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES or NO, depending on whether theSet can encode inChar</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _canEncodeChar:withSet:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_encodeChar:withSet:" title="_encodeChar:withSet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_encodeChar:withSet:">&ndash;&nbsp;_encodeChar:withSet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called by _encodeChar once the character set to use has been determined.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)_encodeChar:(char)<em>inChar</em> withSet:(CodeSet)<em>inSet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inChar</code></th>
+						<td><p>The character to be encoded.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inSet</code></th>
+						<td><p>The CodeSet to use to encode it.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s representing the character encoded using inSet.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method <a href="#//api/name/_encodeChar:">_encodeChar:</a> withSet:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_bestCodeSetForContent" title="_bestCodeSetForContent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_bestCodeSetForContent">&ndash;&nbsp;_bestCodeSetForContent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method provides a common algorithm for determining the best primary code set for <i>content</i></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CodeSet)_bestCodeSetForContent</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SET_A, SET_B, SET_C, whichever was determined to be the best choice based on the data in <i>content</i></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _bestCodeSetForContent</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_shiftCharacterForSet:" title="_shiftCharacterForSet:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_shiftCharacterForSet:">&ndash;&nbsp;_shiftCharacterForSet:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the shift character for a given set</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)_shiftCharacterForSet:(CodeSet)<em>inSet</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inSet</code></th>
+						<td><p>The CodeSet that we wish the shift character for.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A String of 1s and 0s that contains the encoded shift character.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _shiftCharacterForSet:(CodeSet)inSet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/_encodeNumberPair:" title="_encodeNumberPair:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/_encodeNumberPair:">&ndash;&nbsp;_encodeNumberPair:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Encodes a two-digit numeric value as a code-set C Code 128 value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)_encodeNumberPair:(NSString *)<em>inPair</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inPair</code></th>
+						<td><p>String with length of two that holds the string representation of the two-digit number to be encoded.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s representing the number pair.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method _encodeNumberPair:</p><p>Two digit numeric values when encoding using code set C coincide with the character &ldquo;value&rdquo; according to Code 128,
+             so this method is much more useful than for just encoding for set-C, it also gives us a shortcut when calculating
+             the check-digit and when trying to encode it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/barcode" title="barcode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/barcode">&ndash;&nbsp;barcode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overridden to process sets of two characters when using SET_C as primary set, since it packs two characters into one</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)barcode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String of 0s and 1s representing the content.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method barcode:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NKDCode128Barcode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 jinyuyoulong. All rights reserved. Updated: 2020-03-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
